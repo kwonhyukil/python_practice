@@ -3,8 +3,6 @@ N, M = map(int, input().split())
 baskets = [i for i in range(1,N+1)]
 temp = 0
 
-print(baskets)
-
 for _ in range(M):
     i, j = map(int, input().split())
     temp = baskets[i-1]
