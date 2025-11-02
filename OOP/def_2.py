@@ -1,4 +1,3 @@
-
 def prt(*arg):
   print(arg)
   
