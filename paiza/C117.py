@@ -17,20 +17,13 @@ N, M = map(int, input().split())
 # 건설비용 / 인건비 / 이익
 A, B, C = map(int, input().split())
 
-salesList = []
+count = 0
 
 # 점수 당 이익 계산
 for i in range(N):
   # 판매 라면수 계산
   num = int(input())
-  total = (num * C) - A - (B * M)
-  salesList.append(total)
-
-
-count = 0
-
-for w in salesList:
-  if w < 0:
+  if (num * C) - A - (B * M)  < 0:
     count += 1
-    
+
 print(count)
